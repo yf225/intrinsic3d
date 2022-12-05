@@ -31,6 +31,7 @@ frame-000000.pose.txt
 frame-000001.color.png
 frame-000001.depth.png
 frame-000001.pose.txt
+...
 """
 
 def colmap_cam_to_intrinsic3d_cam_pose_txt(colmap_cam_file_path):
