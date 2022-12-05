@@ -330,7 +330,7 @@ namespace nv
         options.callbacks.push_back(&successful_step_cb);
 
 		// multi-threading
-		options.num_threads = omp_get_max_threads();
+		options.num_threads = 80;
 
 		// solve problem
 		ceres::Solver::Summary summary;
