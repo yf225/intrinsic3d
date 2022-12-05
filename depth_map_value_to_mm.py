@@ -8,7 +8,8 @@ iphone13pro_mm_to_negated_value_ratio = 1.8527918781725887  # From physical meas
 
 def depth_map_value_to_mm(depth_map_value_file_path):
     depth_map_value_np = cv2.imread(depth_map_value_file_path)
-    depth_map_mm_np = ((256 - depth_map_value_np) * iphone13pro_mm_to_negated_value_ratio).astype(np.float16)
+    # depth_map_mm_np = ((256 - depth_map_value_np) * iphone13pro_mm_to_negated_value_ratio).astype(np.float16)
+    depth_map_mm_np = (256 - depth_map_value_np) * iphone13pro_mm_to_negated_value_ratio
     cv2.imwrite(depth_map_value_file_path.replace(".depth.original.png", ".depth.png"), depth_map_mm_np)
 
 if __name__ == "__main__":
