@@ -76,6 +76,7 @@ def colmap_cam_to_intrinsic3d_cam_pose_txt(colmap_cam_file_path):
 {r1[1]} {r1[2]} {r1[3]} {t[1]}
 {r2[1]} {r2[2]} {r2[3]} {t[2]}
 {r3[1]} {r3[2]} {r3[3]} {t[3]}
+0 0 0 1
 """)
 
 
