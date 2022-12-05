@@ -37,7 +37,7 @@ frame-000001.pose.txt
 def colmap_cam_to_intrinsic3d_cam_pose_txt(colmap_cam_file_path):
     with open(colmap_cam_file_path, "r") as f:
         lines = f.readlines()
-        nums = lines[0].split(" ")
+        nums = lines[0].strip().split(" ")
         t = [0] + nums[:3] 
         r1 = [0] + nums[3:6]
         r2 = [0] + nums[6:9]
