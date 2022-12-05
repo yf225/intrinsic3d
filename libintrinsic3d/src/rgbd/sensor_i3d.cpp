@@ -199,9 +199,10 @@ namespace nv
 
             // add depth map
             std::string filename_depth = filename_base + ".depth.png";
-            if (!std::ifstream(filename_depth.c_str()).is_open())
+            if (!std::ifstream(filename_depth.c_str()).is_open()) {
                 std::cout << "Unable to read depth map: " << filename_depth << std::endl;
                 break;
+            }
             files_depth.push_back(filename_depth);
             double timestamp_depth = static_cast<double>(i);
             timestamps_depth.push_back(timestamp_depth);
