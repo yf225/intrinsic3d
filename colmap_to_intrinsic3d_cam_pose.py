@@ -32,6 +32,35 @@ frame-000001.color.png
 frame-000001.depth.png
 frame-000001.pose.txt
 ...
+
+
+colorIntrinsics.txt (color camera intrinsics):
+
+r11 r12 r13 tx
+r21 r22 r23 ty
+r31 r32 r33 tz
+0 0 0 1
+
+Try to use:
+
+1 0 0 0
+0 1 0 0
+0 0 1 0
+0 0 0 1
+
+
+depthIntrinsics.txt (depth camera intrinsics):
+r11 r12 r13 tx
+r21 r22 r23 ty
+r31 r32 r33 tz
+0 0 0 1
+
+Try to use:
+
+1 0 0 0
+0 1 0 0
+0 0 1 0
+0 0 0 1
 """
 
 def colmap_cam_to_intrinsic3d_cam_pose_txt(colmap_cam_file_path):
