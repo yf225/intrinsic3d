@@ -334,7 +334,7 @@ namespace nv
 		//options.use_nonmonotonic_steps = true;
 
 		// multi-threading
-		options.num_threads = 80;
+		options.num_threads = omp_get_max_threads();
 
 		// solve problem
 		ceres::Solver::Summary summary;
