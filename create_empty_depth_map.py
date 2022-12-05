@@ -8,4 +8,4 @@ def create_empty_depth_map(color_image_file_path, example_depth_map_value_file_p
 
 if __name__ == "__main__":
     import sys
-    depth_map_value_to_mm(sys.argv[1], sys.argv[2])
+    create_empty_depth_map(sys.argv[1], sys.argv[2])
